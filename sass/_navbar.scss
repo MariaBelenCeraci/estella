@@ -1,0 +1,86 @@
+
+/*Navbar*/
+.menu-hamburguesa{
+    height:20px;
+}
+
+.navbar{
+    border-bottom: solid 1px #d4d5e0;
+    background-color: #ffffff;
+}
+
+.dropdown-toggle::after{
+    border: none;
+}
+
+.nav-icon{
+    height: 15px;
+    margin-right: 8px;
+}
+
+.logo{
+    height:50px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    margin-bottom:5px;
+    margin-top: 5px;
+    font-size: 16px;
+    color:#4d4e5e;
+    font-family: 'DM Sans', sans-serif;
+    transition: 0s;
+
+    @media (min-width: 992px){
+        margin-right:30px;
+    }
+
+        &:hover{
+            color: $rojo;
+            font-weight: 600;
+        }
+}
+
+.dropdown-toggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #e3e3e6fd;
+    border-radius: 6px;
+    padding: 8px;
+    width: 130px;
+}
+
+.dropdown-item{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+.link-actual{
+    color: #0a0a42;
+    font-weight: 600;
+}
+
+.mi-carrito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carrito{
+    margin-bottom: 3px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 0rem;
+}
+
+.nav-link:focus{
+    color: #000000;
+}

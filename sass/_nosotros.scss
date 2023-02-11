@@ -1,0 +1,310 @@
+/*Nosotros*/
+
+/*Variable local*/
+$margen: 10%;
+
+/*Acerca de Estella*/
+.portada-nosotros{
+    width: 60%;
+
+    @media (min-width: 600px){
+        width: 50%;
+    }
+
+    @media (min-width: 768px){
+        width:35%;
+        margin-right: 5%;
+        margin-top:20px;
+    }
+
+    @media (min-width: 1024px){
+        width: 400px;
+        margin-top: 50px;
+    }
+}
+
+.acerca-estella{
+    margin-bottom:40px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px #cbcbd8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efeff4cc;
+    justify-content: center;
+
+    @media (min-width: 768px){
+        flex-direction: row;
+    }
+}
+
+.texto-acerca{
+    margin: 60px $margen 60px $margen;
+
+        h1{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        p{
+            color:#383842;
+
+            @media (min-width: 1024px){
+            width: 400px;
+            }
+        }
+
+    @media (min-width: 600px){
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    @media (min-width: 768px){
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+    @media (min-width: 1024px){
+        margin-top: 70px;
+        margin-left: 10%;
+    }
+}
+
+.linea-nos{
+    width: 40px;
+    border-bottom: solid 4px #FF4B61;
+    border-radius: 60px;
+    margin-bottom: 18px;
+}
+
+.accesos-nosotros{
+    margin-top: 20px;
+}
+
+.acerca-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+        h5{
+        margin-bottom: 0;
+        margin-right: 10px;
+        color: $rojo;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.nuestra-historia-link{
+    margin-bottom: 7px;
+}
+
+.arrow-acerca{
+    filter: $iconorojo;
+}
+
+/*Los comienzos*/
+.comienzos-container{
+    margin: 0px $margen 50px $margen;
+    display: grid;
+    grid-template-areas: 
+    "texto-comienzos"
+    "los-comienzos-img";
+    place-items: center;
+
+        h2{
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        p{
+            margin-top: 20px;
+        }
+        
+    @media (min-width: 600px){
+        margin-left: 0;
+        margin-right: 0;
+    }
+        
+    @media (min-width: 768px){
+        grid-template-areas: 
+        "los-comienzos-img texto-comienzos";
+        margin-left: 10%;
+        margin-right:10%;
+    }
+
+    @media (min-width: 1024px){
+        width: 900px;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+}
+
+.texto-comienzos{
+    grid-area: texto-comienzos;
+
+    @media (min-width: 600px){
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    @media (min-width: 768px){
+        margin-left: 10%;
+        margin-right: 4%;
+    }
+}
+
+.los-comienzos-img{
+    grid-area: los-comienzos-img;
+    width: 80%;
+    margin-top: 30px;
+
+    @media (min-width: 600px){
+        width:50%;
+    }
+
+    @media (min-width: 768px){
+        width: 90%;
+    }
+
+    @media (min-width:1024px){
+        width: 25em;
+    }
+}
+
+/*Ingresando al mundo del arte*/
+.ingresando-arte{
+    margin: 0px $margen 50px $margen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 600px){
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    @media (min-width: 768px){
+        flex-direction: row;
+        margin: 0px 10% 70px $margen;
+    }
+
+    @media (min-width: 1024px){
+        width: 900px;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+}
+
+.ingresando-img{
+    width:80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px){
+        width: 40%;
+        margin-left:5%;
+    }
+
+    @media (min-width: 1024px){
+        width: 28em;
+    }
+}
+
+.texto-ingresando{
+        h2{
+            text-align: left;
+        }
+    
+    @media (min-width: 1024px){
+        width:390px;
+        }
+}
+
+/*Estella hoy*/
+
+.estella-hoy{
+    margin: 0px $margen 80px $margen;
+    display: flex;
+    flex-direction: column;
+
+        h2{
+            text-align: left;
+        }
+
+    @media (min-width: 600px){
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    @media (min-width:768px){
+        margin-left: 10%;
+        margin-right: 10%;
+        align-items: center;
+    }
+}
+
+.mision{
+    background-color: #FFFFFF;
+    border: solid 1px #bdbdc7;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+        h3{
+            border-bottom: 1px solid #aaaab6;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: $rojo;
+            font-weight: 600;
+
+            @media (min-width:1024px){
+                text-align: center;
+            }
+        }
+
+    @media (min-width:768px){
+        width: 326px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @media (min-width:1024px){
+        width: 760px;
+    }
+}
+
+.texto-hoy{
+    margin-bottom: 40px;
+
+    @media (min-width:768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        p{
+            @media (min-width:768px){
+                text-align: center;
+            }
+
+            @media (min-width:1024px){
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+}
+
+.mision-vision{
+    @media (min-width:768px){
+        display: flex;
+        width: 587px;
+    }
+}
+
+.mision-margen{
+    @media (min-width:768px){
+        margin-right: 10px;
+    }
+}

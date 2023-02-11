@@ -1,0 +1,217 @@
+@import "variableglobal";
+@import "generales";
+@import "navbar";
+@import "footer";
+@import "nosotros";
+@import "index";
+@import "imprenta";
+@import "productos";
+
+
+/*Seccion Contacto*/
+.seccion-contacto{
+    display: grid;
+    margin: 40px 8% 35px 8%;
+    gap:10px;
+    height: 1004px;
+    grid-template-areas:
+    "contacto-titulo"
+    "formulario-contacto"
+    "contacto-datos"  
+    "contacto-redes"
+    ;
+    grid-template-rows:  0.5fr  4fr 1.6fr 1fr;
+
+    @media (min-width: 600px){
+        height: 809px;
+        grid-template-areas:
+        "contacto-titulo contacto-titulo"
+        "formulario-contacto formulario-contacto"
+        "contacto-datos contacto-redes"  
+        ;
+        grid-template-rows: 4fr 1.5fr  4.2fr;
+}  
+    
+    @media (min-width: 768px){
+        margin-bottom: 0px;
+        margin-top: 60px;
+        height: 640px;
+        grid-template-areas:
+        "contacto-titulo formulario-contacto"
+        "contacto-datos formulario-contacto"
+        "contacto-redes formulario-contacto";
+        gap:20px;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr 0.5fr  0.5fr;
+    } 
+} 
+
+/*Titulo*/
+
+.contacto-titulo{
+    grid-area: contacto-titulo;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    @media (min-width: 1024px){
+        margin-left: 20%;
+    }
+
+        h1{
+            @media (min-width: 768px){
+                margin-bottom: 20px;
+            }
+        }
+
+        p{
+            @media (min-width: 768px){
+                margin-left: 0;
+                line-height: 19px;
+                border-bottom: solid 1px #a1a1a1;
+                padding-bottom:48px;
+                margin-bottom: 30px;
+            }
+        }
+}
+
+.arrow-contacto{
+    filter: invert(38%) sepia(61%) saturate(1400%) hue-rotate(319deg) brightness(101%) contrast(101%);
+}
+
+.contacto-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+
+        h4{
+            margin-bottom: 0;
+            color: $rojo;
+            margin-right: 8px;
+        }
+}
+
+.contacto-texto {
+        
+        p{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+}
+
+/*Datos*/
+
+.contacto-datos{
+    grid-area: contacto-datos;  
+    margin-top: 20px;
+
+    @media (min-width: 1024px){
+        margin-left: 20%;
+}
+}
+
+.icon-contacto{
+    height:15px;
+    margin-right: 8px;
+}
+
+.horarios-atencion{
+    margin-top: 5px;
+
+        h4{
+            color:#3d3d50;
+        }
+}
+
+/*Redes*/
+.contacto-redes {
+    grid-area: contacto-redes;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+        h4{
+            text-align: center;
+            color:#3d3d50;
+        }
+    
+    @media (min-width: 768px){
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    @media (min-width: 1024px){
+            margin-left: 20%;
+    }
+}
+
+.red-contacto{
+    height: 15px;
+    margin-right: 10px;
+}
+
+.redes-contacto{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Formulario de contacto*/
+
+.formulario-contacto{
+    grid-area: formulario-contacto;
+    background-color: #ffffff;
+    padding-top: 20px;
+    height: fit-content;
+    box-shadow: 0px 30px 60px 0px rgba(97, 97, 138, 0.068);
+
+    @media (min-width: 768px){
+        margin-top: 0px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        padding-top: 23px;
+        margin-left:3%;
+    }
+}
+
+.form-contacto-container{
+    margin: 0px 8% 8% 8%;
+}
+
+.mb-3{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.text-contacto{
+    margin-bottom: 15px;
+    height: 80px;
+}
+
+.boton-contacto{
+    margin-left:10%;
+    font-size: 14px;
+}
+
+.datos-container{
+    display: flex;
+    flex-direction: row;
+
+        h4{
+            color:#3d3d50;
+        }
+}
+
+.boton-form{
+    outline: none;
+    border: none;
+    background-color: #FF4B61;
+    border-radius: 3px;
+    color: #FFFFFF;
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+}
